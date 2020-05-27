@@ -24,7 +24,7 @@ if ($_SERVER['REQUEST_METHOD'] == 'POST') {
             echo $str . ' Khong dung dinh dang, moi nhap lai';
         }
     }
-    echo checkValidateEmail($email);
+    checkValidateEmail($email);
 }
 ?>
 </body>

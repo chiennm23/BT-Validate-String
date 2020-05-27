@@ -24,8 +24,9 @@ function checkValidateAccount($str)
 }
 $account = '_abc012';
 $account1 = 'Acb012%';
-echo checkValidateAccount($account) . '<br>';
-echo checkValidateAccount($account1);
+checkValidateAccount($account);
+echo '<br>';
+checkValidateAccount($account1);
 ?>
 </body>
 </html>

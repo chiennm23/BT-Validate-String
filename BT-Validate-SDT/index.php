@@ -25,9 +25,8 @@ if ($_SERVER['REQUEST_METHOD'] == 'POST') {
             echo $str . ' So khong dung dinh dang';
         }
     }
-    echo checkValidatePhone($phone);
+     checkValidatePhone($phone);
 }
-
 ?>
 </body>
 </html>

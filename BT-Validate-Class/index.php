@@ -26,6 +26,6 @@ if ($_SERVER['REQUEST_METHOD'] == 'POST') {
             echo $str . ' Khong dung dinh dang cua lop hoc';
         }
     }
-    echo checkValidateClass($class) . '<br>';
+    checkValidateClass($class) . '<br>';
 }
 ?>
