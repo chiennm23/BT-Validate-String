@@ -19,7 +19,7 @@ if ($_SERVER['REQUEST_METHOD'] == 'POST') {
     $class = $_POST['class'];
     function checkValidateClass($str)
     {
-        $pattern = '/^[A-Z]+[0-9]{4,4}+[G|H|I|K|L|M]$/';
+        $pattern = '/^[A-Z][0-9]{4}[G|H|I|K|L|M]$/';
         if (preg_match($pattern, $str)) {
             echo $str . ' dung dinh dang cua lop hoc';
         } else {
