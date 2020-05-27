@@ -17,7 +17,8 @@ if ($_SERVER['REQUEST_METHOD'] == 'POST') {
     $phone = $_POST['phone'];
 
     function checkValidatePhone ($str) {
-        $pattern = '/^\([0-9]{2,2}\)\-\([0][0-9]{9,9}\)$/';
+//        $pattern = '/^\([0-9]{2}\)\-\(0[0-9]{9}\)$/';
+        $pattern = '/^\(\d{2}\)(-\(0)\d{9}\)$/';
         if (preg_match($pattern, $str)){
             echo $str . ' So dinh dang dung';
         } else {
